@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro-section-with-dropdown-navigation-main1.css">
+    <title>Snap</title>
+</head>
+
+<body class="ff-body">
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="navigation-bar | clr-grey fs-navigation d-flex">
+
+                <a href="#" class="logo"><img src="images/logo.svg" alt="go to home page"></a>
+
+                <button class="mobile-menu-trigger" aria-expanded="false" aria-controls="main-navigation">
+                    <span class="visually-hidden">menu</span>
+                </button>
+
+                <nav id="main-navigation" class="d-flex">
+                    <ul class="links-list | d-flex">
+                        <li class="dropdown-menu">
+                            <button class="dropdown-trigger | d-flex" aria-expanded="false"
+                                aria-controls="features">
+                                <span class="button-text">Features</span>
+                                <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+                            </button>
+                            <ul id="features" class="dropdown-list" data-visible="false">
+                                <li>
+                                    <a class="d-flex" href="#">
+                                        <img src="images/icon-todo.svg" alt="" aria-hidden="true">
+                                        Todo List</a>
+                                </li>
+                                <li>
+                                    <a class="d-flex gap-400 align-items-center" href="#">
+                                        <img src="images/icon-calendar.svg" alt="" aria-hidden="true">
+                                        Calendar</a>
+                                </li>
+                                <li>
+                                    <a class="d-flex gap-400 align-items-center" href="#">
+                                        <img src="images/icon-reminders.svg" alt="" aria-hidden="true">
+                                        Reminders</a>
+                                </li>
+                                <li>
+                                    <a class="d-flex gap-400 align-items-center" href="#">
+                                        <img src="images/icon-planning.svg" alt="" aria-hidden="true">
+                                        Planning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-menu">
+                            <button class="dropdown-trigger | d-flex" aria-expanded="false"
+                                aria-controls="company">
+                                <span class="button-text">Company</span>
+                                <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+                            </button>
+                            <ul id="company" class="dropdown-list" data-visible="false">
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul class="nav-cta-btn links-list | d-flex">
+                        <li><a href="#">Log In</a></li>
+                        <li><a class="register-btn" href="#">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="grid-even-columns">
+                <div class="main-picture">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/image-hero-desktop.png">
+                        <img src="images/image-hero-mobile.png" alt="" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="text-container text-position d-grid">
+                    <section aria-labelledby="main-title" class="main-section">
+                        <h1 id="main-title" class="ff-heading clr-black fs-heading">Make remote work</h1>
+                        <p class="main-paragraph | clr-grey">Get your team in sync, no matter your location. Streamline
+                            processes,
+                            create team rituals, and watch productivity soar.
+                        </p>
+                        <button class="main-cta-btn | bg-clr-black clr-white fs-button">Learn more</button>
+                    </section>
+                    <div class="partners | d-flex" aria-label="business partners">
+                        <figure>
+                            <img src="images/client-databiz.svg" alt="">
+                            <figcaption class="visually-hidden">databiz logo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/client-audiophile.svg" alt="">
+                            <figcaption class="visually-hidden">audiophile logo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/client-meet.svg" alt="">
+                            <figcaption class="visually-hidden">meet logo</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/client-maker.svg" alt="">
+                            <figcaption class="visually-hidden">maker logo</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="intro-section-with-dropdown-navigation-main.js"></script>
+</body>
+
+</html>
