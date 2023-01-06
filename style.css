@@ -248,6 +248,10 @@ button >* {
     }
 }
 
+.navigation-bar a {
+    color: var(--clr-grey);
+}
+
 /*--------------main-navigation--------------*/
 
 #main-navigation a:is(:hover, :focus),
